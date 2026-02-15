@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Sistema Completo Point X Açaí</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #34495e;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .header-info {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .price-original {
+            font-size: 1.2em;
+            text-decoration: line-through;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .price-discount {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #f39c12;
+        }
+
+        .price-final {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price-subtitle {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h4 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+
+        .breakdown-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+        }
+
+        .breakdown-table th {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .breakdown-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .breakdown-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .breakdown-table tr:last-child {
+            font-weight: bold;
+            background: #ecf0f1;
+            font-size: 1.1em;
+        }
+
+        .payment-phases {
+            background: #e8f5e9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #4caf50;
+        }
+
+        .payment-phases h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .payment-phases ol {
+            margin-left: 20px;
+        }
+
+        .payment-phases li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .payment-phases strong {
+            color: #2e7d32;
+            font-size: 1.2em;
+        }
+
+        .payment-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .payment-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .payment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-color: #4caf50;
+        }
+
+        .payment-card.recommended {
+            border-color: #4caf50;
+            border-width: 3px;
+        }
+
+        .payment-card.recommended::before {
+            content: "⭐ RECOMENDADO";
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: #4caf50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+
+        .payment-card h4 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .payment-phase {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .payment-phase-number {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .payment-phase-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .payment-phase-value {
+            font-size: 1.2em;
+            color: #2e7d32;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .payment-phase-detail {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        .payment-total {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .payment-total-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .payment-total-value {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .payment-installment {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .payment-installment-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #4caf50;
+            margin: 10px 0;
+        }
+
+        .payment-installment-count {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .payment-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .payment-features li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .payment-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .payment-note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #ffc107;
+            font-size: 0.9em;
+        }
+
+        .feature-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .feature-section h3 {
+            color: white;
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid rgba(255,255,255,0.3);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .feature-section p {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 25px;
+            line-height: 1.8;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .feature-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 18px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-item:hover {
+            transform: translateX(5px) translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+            border-left-color: #764ba2;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        }
+
+        .feature-item strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        .feature-item ul {
+            margin: 10px 0 0 0;
+            padding-left: 20px;
+        }
+
+        .feature-item ul li {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .feature-item-simple {
+            background: white;
+            padding: 15px 18px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-item-simple:hover {
+            transform: translateX(5px) translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+            border-left-color: #764ba2;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        }
+
+        .feature-item-simple strong {
+            color: #2c3e50;
+            font-size: 1.05em;
+        }
+
+        .comparison-box {
+            background: #fff3cd;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #ffc107;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .comparison-box h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th {
+            background: #856404;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ffeaa7;
+        }
+
+        .advantages {
+            background: #e3f2fd;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #2196f3;
+        }
+
+        .advantages h3 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .advantage-item {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #2196f3;
+        }
+
+        .advantage-item strong {
+            color: #1565c0;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .timeline {
+            background: #f3e5f5;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #9c27b0;
+        }
+
+        .timeline h3 {
+            color: #6a1b9a;
+            margin-top: 0;
+        }
+
+        .timeline-item {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #9c27b0;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .costs-box {
+            background: #fff9e6;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid #f57c00;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .costs-box h3 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        .costs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .costs-table th {
+            background: #e65100;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .costs-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ffe0b2;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+
+        .badge-warning {
+            background: #ff9800;
+        }
+
+        .badge-info {
+            background: #2196f3;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 15px;
+                border-radius: 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+                padding-bottom: 10px;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+                margin-top: 30px;
+                padding-left: 10px;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+                margin-top: 25px;
+            }
+            
+            h4 {
+                font-size: 1.1em;
+            }
+            
+            .header-info {
+                padding: 15px;
+            }
+            
+            .header-info p {
+                font-size: 0.95em;
+            }
+            
+            .price-box {
+                padding: 20px 15px;
+                margin: 20px 0;
+            }
+            
+            .price-original {
+                font-size: 1em;
+            }
+            
+            .price-discount {
+                font-size: 0.95em;
+            }
+            
+            .price-final {
+                font-size: 2em;
+            }
+            
+            .price-subtitle {
+                font-size: 0.85em;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .feature-card {
+                padding: 15px;
+            }
+            
+            .feature-section {
+                padding: 20px 15px;
+                margin: 20px 0;
+            }
+            
+            .feature-section h3 {
+                font-size: 1.3em;
+                padding-bottom: 10px;
+            }
+            
+            .feature-section p {
+                font-size: 1em;
+            }
+            
+            .feature-list-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            
+            .feature-item, .feature-item-simple {
+                padding: 15px;
+            }
+            
+            .payment-options {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .payment-card {
+                padding: 20px 15px;
+            }
+            
+            .payment-card h4 {
+                font-size: 1.3em;
+            }
+            
+            .payment-card.recommended::before {
+                font-size: 0.6em;
+                padding: 3px 8px;
+                right: 10px;
+                top: -10px;
+            }
+            
+            .payment-phase {
+                padding: 12px;
+            }
+            
+            .payment-phase-value {
+                font-size: 1.1em;
+            }
+            
+            .payment-installment-value {
+                font-size: 1.8em;
+            }
+            
+            .payment-total-value {
+                font-size: 1.6em;
+            }
+            
+            .table-wrapper {
+                margin: 15px -15px;
+                padding: 0 15px;
+            }
+            
+            .breakdown-table {
+                font-size: 0.9em;
+                min-width: 500px;
+            }
+            
+            .breakdown-table th,
+            .breakdown-table td {
+                padding: 10px 8px;
+                word-wrap: break-word;
+            }
+            
+            .comparison-box,
+            .costs-box {
+                padding: 20px 15px;
+                margin: 20px -15px;
+            }
+            
+            .comparison-box .table-wrapper,
+            .costs-box .table-wrapper {
+                margin: 15px -15px;
+                padding: 0 15px;
+            }
+            
+            .comparison-table,
+            .costs-table {
+                min-width: 500px;
+                font-size: 0.85em;
+            }
+            
+            .comparison-table th,
+            .comparison-table td,
+            .costs-table th,
+            .costs-table td {
+                padding: 8px 6px;
+                word-wrap: break-word;
+            }
+            
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline {
+                padding: 20px 15px;
+            }
+            
+            .timeline-item {
+                padding-left: 25px;
+                font-size: 0.95em;
+            }
+            
+            ul, ol {
+                margin-left: 15px;
+            }
+            
+            ul li, ol li {
+                margin-bottom: 8px;
+                font-size: 0.95em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+            
+            .container {
+                padding: 12px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+            
+            .price-final {
+                font-size: 1.8em;
+            }
+            
+            .payment-phase-number {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                font-size: 0.9em;
+            }
+            
+            .breakdown-table {
+                font-size: 0.8em;
+            }
+            
+            .breakdown-table th,
+            .breakdown-table td {
+                padding: 8px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Proposta Comercial</h1>
+        <h2 style="margin-top: 10px; border: none; padding: 0; font-size: 1.5em; color: #7f8c8d;">Sistema Completo Point X Açaí</h2>
+
+        <div class="header-info">
+            <p><strong>Data:</strong> Janeiro 2025</p>
+            <p><strong>Prazo Estimado:</strong> 6 meses (124.5 dias úteis)</p>
+            <p><strong>Horas Totais:</strong> 996 horas</p>
+        </div>
+
+        <div class="price-box">
+            <div class="price-original">Valor Original: 12.000€ + IVA</div>
+            <div class="price-discount">Desconto Especial: -3.000€</div>
+            <div class="price-final">9.000€</div>
+            <div class="price-subtitle" style="font-size: 1em; margin-top: 15px;">
+                <div style="margin-bottom: 5px;">+ IVA (23%): 2.070€</div>
+                <div style="font-size: 1.3em; font-weight: bold; margin-top: 10px; border-top: 2px solid rgba(255,255,255,0.3); padding-top: 10px;">
+                    Total com IVA: 11.070€
+                </div>
+            </div>
+        </div>
+
+        <h2>1. O Que Você Vai Receber</h2>
+
+        <h3>1.1 Website Profissional Multi-Loja</h3>
+        <p>Um site moderno e profissional que apresenta as 3 lojas Point X Açaí de forma elegante, permite navegação intuitiva entre lojas e funciona perfeitamente em qualquer dispositivo.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4>🏠 Página Inicial</h4>
+                <p>Apresentação impactante das 3 lojas Point X Açaí com navegação direta para cada uma</p>
+            </div>
+            <div class="feature-card">
+                <h4>📍 Páginas por Loja</h4>
+                <p>Cada loja tem: Inicial, Sobre, Endereço/Contactos e Encomendas</p>
+            </div>
+            <div class="feature-card">
+                <h4>📱 Design Responsivo</h4>
+                <p>Funciona perfeitamente em celular, tablet e computador</p>
+            </div>
+            <div class="feature-card">
+                <h4>🎨 Design Moderno</h4>
+                <p>Desenvolvido com SASS, animações suaves e experiência visual profissional</p>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <h3>1.2 Sistema de Pedidos Online Completo</h3>
+            <p>Um sistema completo de pedidos que permite aos seus clientes fazerem pedidos online com takeaway e delivery, incluindo:</p>
+
+            <div class="feature-list-grid">
+                <div class="feature-item">
+                    <strong>👤 Área do Cliente</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Registro, login, gestão de endereços e histórico completo de pedidos</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📦 Catálogo de Produtos</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Produtos organizados por loja, com imagens, descrições e preços</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🛒 Carrinho de Compras</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Sistema completo de carrinho com cálculos automáticos</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🚚 Sistema de Entrega Inteligente</strong>
+                    <ul>
+                        <li>Validação de área de entrega (Google Maps)</li>
+                        <li>Cálculo automático de taxa por distância</li>
+                        <li>Métodos de pagamento por zona</li>
+                        <li>Tempo estimado de entrega</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <strong>🏪 Sistema Takeaway</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Cliente pode escolher buscar na loja</p>
+                </div>
+                <div class="feature-item">
+                    <strong>⏱️ Tempo Médio de Preparo</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Sistema mostra tempo estimado por produto</p>
+                </div>
+                <div class="feature-item">
+                    <strong>💳 Métodos de Pagamento</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">MB Way e dinheiro com troco</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <h3>1.3 Aplicação de Gestão (Dashboard Administrativo)</h3>
+            <p>Um painel de controle completo para gerenciar todas as operações das 3 lojas Point X Açaí:</p>
+
+            <div class="feature-list-grid">
+                <div class="feature-item">
+                    <strong>📋 Gestão de Pedidos em Tempo Real</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Ver, aceitar, rejeitar e atualizar status de pedidos</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🛍️ Gestão de Produtos</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Adicionar, editar produtos por loja, categorias, preços</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📦 Gestão de Estoque</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Controle básico de disponibilidade</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🕐 Gestão de Horários</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Configurar horários avançados por loja, dias da semana, feriados</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🗺️ Configuração de Áreas de Entrega</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Definir zonas e taxas por distância</p>
+                </div>
+                <div class="feature-item">
+                    <strong>👥 Gestão de Clientes</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Ver histórico, estatísticas e informações dos clientes</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📊 Relatórios e Analytics</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Vendas, produtos mais vendidos, estatísticas por loja</p>
+                </div>
+                <div class="feature-item">
+                    <strong>❌ Sistema de Cancelamento</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Cancelar pedidos e processar reembolsos</p>
+                </div>
+                <div class="feature-item">
+                    <strong>💰 Sistema de Pagamento para Estafetas</strong>
+                    <ul>
+                        <li>Cálculo automático por quilômetros percorridos</li>
+                        <li>Configuração de valor por quilômetro</li>
+                        <li>Relatório mensal de pagamentos por estafeta</li>
+                        <li>Histórico detalhado de entregas e valores</li>
+                        <li>Exportação de relatórios para pagamento</li>
+                        <li>Visualização do valor total a pagar no final do mês</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <h3>1.4 Aplicação para Estafetas (App Móvel)</h3>
+            <p>Sistema móvel completo para seus entregadores gerenciarem entregas:</p>
+
+            <div class="feature-list-grid">
+                <div class="feature-item">
+                    <strong>🔔 Notificações de Pedidos</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Todos os estafetas disponíveis recebem notificação, primeiro a aceitar pega</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📦 Gestão de Entregas</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Ver detalhes, calcular rota, marcar como entregue</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📜 Histórico Completo</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Todas as entregas com quilometragem registrada</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🕐 Gestão de Horários</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Definir dias de trabalho e folgas</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📊 Estatísticas Pessoais</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Entregas realizadas, quilômetros percorridos, desempenho</p>
+                </div>
+                <div class="feature-item">
+                    <strong>💵 Visualização de Pagamentos</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Ver valores calculados por entrega e total mensal baseado em quilômetros</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <h3>1.5 Funcionalidades Adicionais Incluídas</h3>
+            <p>Funcionalidades extras que tornam o sistema ainda mais completo e profissional:</p>
+
+            <div class="feature-list-grid">
+                <div class="feature-item-simple">
+                    <strong>⭐ Sistema de Avaliações</strong> - Clientes podem avaliar produtos e entregas
+                </div>
+                <div class="feature-item-simple">
+                    <strong>🎫 Cupons e Descontos</strong> - Sistema completo de cupons promocionais
+                </div>
+                <div class="feature-item-simple">
+                    <strong>🎁 Programa de Fidelidade</strong> - Sistema de pontos e recompensas
+                </div>
+                <div class="feature-item-simple">
+                    <strong>💬 Chat em Tempo Real</strong> - Comunicação direta entre cliente e loja
+                </div>
+                <div class="feature-item-simple">
+                    <strong>📱 App Nativo (PWA)</strong> - Funciona como app nativo no celular
+                </div>
+                <div class="feature-item-simple">
+                    <strong>🌐 Multi-idioma</strong> - Suporte para múltiplos idiomas
+                </div>
+                <div class="feature-item-simple">
+                    <strong>📈 Analytics Avançado</strong> - Relatórios detalhados e insights de negócio
+                </div>
+                <div class="feature-item-simple">
+                    <strong>🔐 Login Social</strong> - Login com Google, Facebook, etc.
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-section">
+            <h3>1.6 Sistema de Notificações</h3>
+            <p>Mantenha todos informados em tempo real sobre o status dos pedidos:</p>
+
+            <div class="feature-list-grid">
+                <div class="feature-item">
+                    <strong>📱 WhatsApp Business</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Notificações automáticas para clientes sobre status do pedido</p>
+                </div>
+                <div class="feature-item">
+                    <strong>📧 Email</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Confirmações de pedido e atualizações</p>
+                </div>
+                <div class="feature-item">
+                    <strong>🔔 Push Notifications</strong>
+                    <p style="margin: 8px 0 0 0; font-size: 0.95em; color: #555;">Notificações em tempo real para estafetas via app</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>2. Breakdown do Investimento</h2>
+
+        <div class="table-wrapper">
+        <table class="breakdown-table">
+            <thead>
+                <tr>
+                    <th>Componente</th>
+                    <th>Dias</th>
+                    <th>Horas</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Website Multi-Loja (SASS)</td>
+                    <td>11.5</td>
+                    <td>92</td>
+                    <td>833€</td>
+                </tr>
+                <tr>
+                    <td>Sistema de Pedidos Online</td>
+                    <td>25.5</td>
+                    <td>204</td>
+                    <td>1.845€</td>
+                </tr>
+                <tr>
+                    <td>App de Gestão (Dashboard)</td>
+                    <td>25</td>
+                    <td>200</td>
+                    <td>1.808€</td>
+                </tr>
+                <tr>
+                    <td>App para Estafetas</td>
+                    <td>8</td>
+                    <td>64</td>
+                    <td>578€</td>
+                </tr>
+                <tr>
+                    <td>Funcionalidades Extras</td>
+                    <td>22.5</td>
+                    <td>180</td>
+                    <td>1.628€</td>
+                </tr>
+                <tr>
+                    <td>Funcionalidades Adicionais</td>
+                    <td>33</td>
+                    <td>264</td>
+                    <td>2.308€</td>
+                </tr>
+                <tr>
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>124.5</strong></td>
+                    <td><strong>996</strong></td>
+                    <td><strong>9.000€</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <h2>3. Forma de Pagamento</h2>
+
+        <div class="payment-options">
+            <!-- Opção 1: Pagamento em 3 Fases -->
+            <div class="payment-card">
+                <h4>💳 Pagamento em 3 Fases</h4>
+                
+                <div class="payment-phase">
+                    <div class="payment-phase-title">
+                        <span class="payment-phase-number">1</span>
+                        Pagamento Inicial (30%)
+                    </div>
+                    <div class="payment-phase-value">3.321€</div>
+                    <div class="payment-phase-detail">2.700€ + IVA (621€)</div>
+                    <div class="payment-phase-detail" style="margin-top: 5px; font-style: italic;">Para iniciar o desenvolvimento</div>
+                </div>
+
+                <div class="payment-phase">
+                    <div class="payment-phase-title">
+                        <span class="payment-phase-number">2</span>
+                        Entrega Parcial (40%)
+                    </div>
+                    <div class="payment-phase-value">4.428€</div>
+                    <div class="payment-phase-detail">3.600€ + IVA (828€)</div>
+                    <div class="payment-phase-detail" style="margin-top: 5px; font-style: italic;">Após entrega de Website + Sistema de Pedidos + App Gestão</div>
+                </div>
+
+                <div class="payment-phase">
+                    <div class="payment-phase-title">
+                        <span class="payment-phase-number">3</span>
+                        Conclusão (30%)
+                    </div>
+                    <div class="payment-phase-value">3.321€</div>
+                    <div class="payment-phase-detail">2.700€ + IVA (621€)</div>
+                    <div class="payment-phase-detail" style="margin-top: 5px; font-style: italic;">Após entrega completa de todos os componentes</div>
+                </div>
+
+                <div class="payment-total">
+                    <div class="payment-total-label">Valor Total</div>
+                    <div class="payment-total-value">11.070€</div>
+                    <div style="font-size: 0.8em; opacity: 0.9; margin-top: 5px;">9.000€ + IVA (2.070€)</div>
+                </div>
+            </div>
+
+            <!-- Opção 2: Parcelado em 9 Vezes -->
+            <div class="payment-card recommended">
+                <h4>📅 Pagamento Parcelado</h4>
+                
+                <div class="payment-installment">
+                    <div class="payment-installment-value">1.230€</div>
+                    <div class="payment-installment-count">× 9 parcelas mensais</div>
+                    <div style="font-size: 0.9em; color: #666; margin-top: 10px;">
+                        1.000€ + IVA (23%)
+                    </div>
+                </div>
+
+                <ul class="payment-features">
+                    <li>Primeira parcela no início do projeto</li>
+                    <li>Parcelas mensais subsequentes</li>
+                    <li>Sem juros adicionais</li>
+                    <li>Facilita o planejamento financeiro</li>
+                    <li>Mesmo valor total</li>
+                </ul>
+
+                <div class="payment-total" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="payment-total-label">Valor Total</div>
+                    <div class="payment-total-value">11.070€</div>
+                    <div style="font-size: 0.8em; opacity: 0.9; margin-top: 5px;">9.000€ + IVA (2.070€)</div>
+                </div>
+
+                <div class="payment-note">
+                    <strong>ℹ️ Nota sobre IVA no Parcelamento:</strong><br>
+                    O IVA pode ser cobrado de duas formas:
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li><strong>Opção A:</strong> IVA cobrado integralmente na primeira parcela (primeira: 3.070€, seguintes 8: 1.000€ cada)</li>
+                        <li><strong>Opção B:</strong> IVA distribuído proporcionalmente (9 parcelas de 1.230€ cada)</li>
+                    </ul>
+                    <em style="font-size: 0.9em;">A opção será acordada no momento da contratação.</em>
+                </div>
+            </div>
+        </div>
+
+        <h2>4. Prazo de Entrega</h2>
+
+        <div class="timeline">
+            <h3>⏱️ Timeline do Projeto</h3>
+            <div class="timeline-item"><strong>Mês 1-2:</strong> Desenvolvimento do Website Multi-Loja</div>
+            <div class="timeline-item"><strong>Mês 2-4:</strong> Sistema de Pedidos Online completo</div>
+            <div class="timeline-item"><strong>Mês 3-5:</strong> Aplicação de Gestão (Dashboard)</div>
+            <div class="timeline-item"><strong>Mês 5-6:</strong> App para Estafetas e Funcionalidades Adicionais</div>
+            <div class="timeline-item"><strong>Mês 6:</strong> Testes finais, ajustes e publicação</div>
+            <p style="margin-top: 20px;"><strong>Total:</strong> 6 meses (124.5 dias úteis)</p>
+        </div>
+
+        <h2>5. Por Que Este Investimento Vale a Pena?</h2>
+
+        <div class="comparison-box">
+            <h3>💰 Comparação de Valores</h3>
+            <p>Este sistema completo, desenvolvido de forma personalizada para suas necessidades, representa um investimento muito mais acessível do que soluções de empresas grandes:</p>
+            
+            <div class="table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Solução</th>
+                        <th>Valor Estimado</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sistema Personalizado (Esta Proposta)</strong></td>
+                        <td><strong>9.000€</strong></td>
+                        <td>Totalmente personalizado, todas as funcionalidades, suporte direto</td>
+                    </tr>
+                    <tr>
+                        <td>Plataforma Enterprise (UberEats, Glovo, etc.)</td>
+                        <td>15.000€ - 30.000€+</td>
+                        <td>Taxas altas por transação, menos personalização, dependência externa</td>
+                    </tr>
+                    <tr>
+                        <td>Agência de Desenvolvimento</td>
+                        <td>25.000€ - 50.000€+</td>
+                        <td>Preços de mercado, pode não incluir todas as funcionalidades</td>
+                    </tr>
+                    <tr>
+                        <td>Desenvolvimento Interno</td>
+                        <td>40.000€ - 80.000€+</td>
+                        <td>Contratação de equipe, infraestrutura, tempo de desenvolvimento</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>💡 Vantagem:</strong> Você recebe um sistema completo, personalizado para as 3 lojas Point X Açaí, com todas as funcionalidades necessárias, por uma fração do custo de soluções enterprise ou desenvolvimento interno.</p>
+        </div>
+
+        <div class="advantages">
+            <h3>✨ Vantagens do Seu Investimento</h3>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <strong>🎯 Personalizado</strong>
+                    <p>Sistema feito especificamente para as 3 lojas Point X Açaí</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>💰 Economia</strong>
+                    <p>Sem taxas por transação como plataformas externas</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>🔒 Controle Total</strong>
+                    <p>Você controla todos os dados e operações</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>📈 Escalável</strong>
+                    <p>Sistema preparado para crescer com seu negócio</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>⚡ Eficiência</strong>
+                    <p>Automatização completa de processos</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>📱 Moderno</strong>
+                    <p>Tecnologias atuais e melhores práticas</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>🔄 Atualizações</strong>
+                    <p>Suporte e melhorias contínuas</p>
+                </div>
+                <div class="advantage-item">
+                    <strong>🎓 Treinamento</strong>
+                    <p>Treinamento completo para sua equipe</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>6. Retorno do Investimento</h2>
+
+        <ul>
+            <li><strong>Mais Pedidos:</strong> Sistema online 24/7 aumenta vendas</li>
+            <li><strong>Eficiência Operacional:</strong> Gestão automatizada economiza tempo e reduz erros</li>
+            <li><strong>Melhor Experiência do Cliente:</strong> Clientes satisfeitos = mais vendas recorrentes</li>
+            <li><strong>Sem Taxas por Transação:</strong> Economia significativa comparado a plataformas externas</li>
+            <li><strong>Dados e Analytics:</strong> Insights valiosos para tomar decisões de negócio</li>
+            <li><strong>Competitividade:</strong> Sistema profissional coloca você à frente da concorrência</li>
+        </ul>
+
+        <h2>7. Custos Mensais Estimados (Após Desenvolvimento)</h2>
+
+        <div class="costs-box">
+            <h3>⚠️ Importante: Custos Recorrentes</h3>
+            <p>Estes custos são mensais e pagos diretamente aos fornecedores. <strong>NÃO estão incluídos</strong> no orçamento de desenvolvimento.</p>
+
+            <div class="table-wrapper">
+            <table class="costs-table">
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Estimativa Mensal</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>WhatsApp Business API</strong></td>
+                        <td>40€ - 80€</td>
+                        <td>Depende do volume de conversas (pedidos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Maps API</strong></td>
+                        <td>0€ - 20€</td>
+                        <td>Provavelmente grátis (primeiros $200/mês)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Firebase</strong></td>
+                        <td>0€ - 20€</td>
+                        <td>Muito provavelmente grátis (plano generoso)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MB Way</strong></td>
+                        <td>Variável</td>
+                        <td>Taxa por transação (~0,5% - 1,5%)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hospedagem</strong></td>
+                        <td>10€ - 30€</td>
+                        <td>Hosting e domínio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL ESTIMADO</strong></td>
+                        <td><strong>50€ - 130€/mês</strong></td>
+                        <td>Sem contar taxas MB Way (variável)</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>💡 Recomendação:</strong> Orçamento mensal de <strong>70€ - 150€</strong> para começar (sem contar taxas de pagamento).</p>
+        </div>
+
+        <h2>8. O Que Você Precisa Fornecer</h2>
+
+        <ul>
+            <li><strong>Conteúdo:</strong> Textos, descrições das lojas, informações sobre produtos</li>
+            <li><strong>Imagens:</strong> Fotos das lojas, produtos, equipe</li>
+            <li><strong>Informações:</strong> Endereços, horários, contactos, áreas de entrega</li>
+            <li><strong>Produtos:</strong> Lista completa de produtos com preços e descrições</li>
+            <li><strong>Feedback:</strong> Aprovações e sugestões durante o desenvolvimento</li>
+        </ul>
+
+        <h2>9. Garantia e Suporte</h2>
+
+        <div style="background: #e3f2fd; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #2196f3;">
+            <h3 style="color: #1565c0; margin-top: 0;">✅ Garantia e Atualizações</h3>
+            <ul style="margin-top: 15px;">
+                <li><strong>Garantia:</strong> 3 meses de garantia para correção de problemas técnicos</li>
+                <li><strong>Atualizações Grátis:</strong> <span style="background: #4caf50; color: white; padding: 3px 8px; border-radius: 3px; font-weight: bold;">3 meses grátis</span> de atualizações e ajustes após a entrega do projeto</li>
+                <li><strong>Treinamento:</strong> Treinamento completo para você e sua equipe</li>
+                <li><strong>Documentação:</strong> Documentação completa do sistema</li>
+            </ul>
+        </div>
+
+        <div style="background: #fff9e6; padding: 25px; border-radius: 8px; margin: 20px 0; border-left: 5px solid #f57c00;">
+            <h3 style="color: #e65100; margin-top: 0;">💰 Suporte Pós-Garantia</h3>
+            <p style="margin-top: 10px;">Após os 3 meses grátis, oferecemos suporte técnico e atualizações com cobrança por hora:</p>
+            <ul style="margin-top: 15px;">
+                <li><strong>Valor por hora:</strong> <span style="background: #f57c00; color: white; padding: 3px 8px; border-radius: 3px; font-weight: bold; font-size: 1.1em;">20€/hora</span> + IVA (23%) = <strong>24,60€/hora</strong></li>
+                <li>Atualizações de funcionalidades</li>
+                <li>Correções de bugs</li>
+                <li>Ajustes e melhorias</li>
+                <li>Suporte técnico</li>
+                <li>Adição de novas funcionalidades</li>
+            </ul>
+            <p style="margin-top: 15px; font-style: italic; color: #856404;">💡 <strong>Nota:</strong> Você só paga pelo tempo efetivamente utilizado. Sem mensalidades obrigatórias!</p>
+        </div>
+
+        <h2>10. Próximos Passos</h2>
+
+        <ol>
+            <li>Você revisa esta proposta e tira suas dúvidas</li>
+            <li>Aprovamos juntos o escopo e os valores</li>
+            <li>Assinamos o acordo (se necessário)</li>
+            <li>Você faz o pagamento inicial (30% - 3.321€ com IVA)</li>
+            <li>Começamos o desenvolvimento e mantemos você atualizado</li>
+            <li>Você testa e aprova cada etapa</li>
+            <li>Publicamos o sistema online</li>
+            <li>Você faz o pagamento final (30% - 3.321€ com IVA)</li>
+            <li>Treinamento e entrega do projeto completo</li>
+        </ol>
+
+        <h2>11. Resumo Executivo</h2>
+
+        <div style="background: #e8f5e9; padding: 25px; border-radius: 8px; margin: 30px 0; border-left: 5px solid #4caf50;">
+            <h3 style="color: #2e7d32; margin-top: 0;">📋 Resumo</h3>
+            <ul style="list-style: none; margin-left: 0;">
+                <li>✅ <strong>Sistema Completo:</strong> Website + Pedidos Online + Dashboard + App Estafetas</li>
+                <li>✅ <strong>Valor Total:</strong> 9.000€ + IVA (2.070€) = <strong>11.070€</strong> (desconto de 3.000€ aplicado)</li>
+                <li>✅ <strong>Prazo:</strong> 6 meses (124.5 dias úteis)</li>
+                <li>✅ <strong>Pagamento:</strong> 3 fases (3.321€ - 4.428€ - 3.321€) ou parcelado em 9 vezes de 1.230€</li>
+                <li>✅ <strong>Atualizações Grátis:</strong> 3 meses grátis após entrega</li>
+                <li>✅ <strong>Suporte Pós-Garantia:</strong> 20€/hora + IVA = 24,60€/hora (após 3 meses grátis)</li>
+                <li>✅ <strong>Garantia:</strong> 3 meses</li>
+                <li>✅ <strong>Treinamento:</strong> Incluído</li>
+                <li>✅ <strong>Funcionalidades Adicionais:</strong> Todas incluídas (avaliações, cupons, fidelidade, chat, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p><strong>Esta proposta foi elaborada com cuidado para atender suas necessidades e oferecer a melhor solução para seu negócio.</strong></p>
+            <p style="margin-top: 10px;">Estamos comprometidos em entregar um trabalho de qualidade, dentro do prazo acordado, e que realmente ajude você a crescer e vender mais.</p>
+            <p style="margin-top: 20px; font-size: 1.1em; color: #2c3e50;"><strong>Estou à disposição para esclarecer qualquer dúvida!</strong></p>
+        </div>
+    </div>
+</body>
+</html>
+
